@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <script src="./app.js"></script>
+    <title>Yotube</title>
+</head>
+<body>
+    <div id="nav-bar">
+        <a href="#" class="menu-bars" id="show-menu">
+            <i class="fas fa-bars"></i>
+        </a>
+    </div>
+    <nav class="navbar" >
+        
+        <ul class="nav-menu-items">
+            <div id="main">
+      
+                <div class="w3-teal">
+                  <button id="openNav" class="w3-button w3-white w3-xlarge" onclick="w3_open()">&#9776;</button>
+                  
+                  </div>
+             </div>
+        </ul> 
+
+        <img src="./Images/logo.png" class="logo" alt="youtube logo">
+        <div class="search-box"> 
+            <input type="text" class="search-bar" placeholder="search">
+            <button class="search-btn"><img src="./Images/search.png"></button>
+        </div>
+        <div class="user-options">
+            <img src="./Images/video.png" class="icon" alt="">
+            <img src="./Images/grid.png" class="icon" alt="">
+            <img src="./Images/bell.png" class="icon" alt="">
+            <div class="user-dp">
+                <img src="./Images/ProfilePic.jpg" alt="">
+            </div>
+        </div>     
+               
+<div class="w3-animate-left" style="display:none" id="mySidebar">
+        
+        <nav class="side-bar" id="mySidebar" id="nav-menu">        
+            <button class="w3-bar-item w3-button w3-large" onclick="w3_close()">Close &times;</button>
+            <a href="#" class="links active"><img src="./Images/home.png" alt="">home</a>
+            <a href="#" class="links"><img src="./Images/explore.png" alt="">explore</a>
+            <a href="#" class="links"><img src="./Images/subscription.png" alt="">subscription</a>
+            <hr class="seperator">
+            <a href="#" class="links"><img src="./Images/library.png" alt="">library</a>
+            <a href="#" class="links"><img src="./Images/history.png" alt="">history</a>
+            <a href="#" class="links"><img src="./Images/your-video.png" alt="">your video</a>
+            <a href="#" class="links"><img src="./Images/watch-later.png" alt="">watch leater</a>
+            <a href="#" class="links"><img src="./Images/liked video.png" alt="">like video</a>
+            <a href="#" class="links"><img src="./Images/show more.png" alt="">show more</a>
+        
+        </nav>    
+</div>
+
+    </nav>
+    <div class="filters">
+        <button class="filter-options active">all</button>
+        <button class="filter-options">CSS</button>
+        <button class="filter-options">web development</button>
+        <button class="filter-options">python</button>
+        <button class="filter-options">entertainment</button>
+        <button class="filter-options">marvel</button>
+        <button class="filter-options">javascript</button>
+        <button class="filter-options">artificial intelligence</button>
+        <button class="filter-options">machine learning</button>
+        <button class="filter-options">trending</button>
+    </div>
+
+
+    <div class="video-container">
+        <div class="video">
+            <img src="./Images/YouTube-Thumbnail-Sizes.png" class="thumbnail" alt="thumbnail">
+            <div class="content">
+                <img src="./Images/ProfilePic.jpg" alt="channel-icon" class="channel-icon">
+                <div class="info">
+                    <h4 class="title">youtube clone 2022 | create working youtube clone</h4>
+                    <p class="channel-name">nelson</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="video">
+            <img src="./Images/YouTube-Thumbnail-Sizes.png" class="thumbnail" alt="thumbnail">
+            <div class="content">
+                <img src="./Images/ProfilePic.jpg" alt="channel-icon" class="channel-icon">
+                <div class="info">
+                    <h4 class="title">youtube clone 2021 | create working youtube clone</h4>
+                    <p class="channel-name">modern web</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="video">
+            <img src="./Images/YouTube-Thumbnail-Sizes.png" class="thumbnail" alt="thumbnail">
+            <div class="content">
+                <img src="./Images/ProfilePic.jpg" alt="channel-icon" class="channel-icon">
+                <div class="info">
+                    <h4 class="title">youtube clone 2021 | create working youtube clone</h4>
+                    <p class="channel-name">modern web</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="video">
+            <img src="./Images/YouTube-Thumbnail-Sizes.png" class="thumbnail" alt="thumbnail">
+            <div class="content">
+                <img src="./Images/ProfilePic.jpg" alt="channel-icon" class="channel-icon">
+                <div class="info">
+                    <h4 class="title">youtube clone 2021 | create working youtube clone</h4>
+                    <p class="channel-name">modern web</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="video">
+            <img src="./Images/YouTube-Thumbnail-Sizes.png" class="thumbnail" alt="thumbnail">
+            <div class="content">
+                <img src="./Images/ProfilePic.jpg" alt="channel-icon" class="channel-icon">
+                <div class="info">
+                    <h4 class="title">youtube clone 2021 | create working youtube clone</h4>
+                    <p class="channel-name">modern web</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="video">
+            <img src="./Images/YouTube-Thumbnail-Sizes.png" class="thumbnail" alt="thumbnail">
+            <div class="content">
+                <img src="./Images/ProfilePic.jpg" alt="channel-icon" class="channel-icon">
+                <div class="info">
+                    <h4 class="title">youtube clone 2021 | create working youtube clone</h4>
+                    <p class="channel-name">modern web</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="video">
+            <img src="./Images/YouTube-Thumbnail-Sizes.png" class="thumbnail" alt="thumbnail">
+            <div class="content">
+                <img src="./Images/ProfilePic.jpg" alt="channel-icon" class="channel-icon">
+                <div class="info">
+                    <h4 class="title">youtube clone 2021 | create working youtube clone</h4>
+                    <p class="channel-name">modern web</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="video">
+            <img src="./Images/YouTube-Thumbnail-Sizes.png" class="thumbnail" alt="thumbnail">
+            <div class="content">
+                <img src="./Images/ProfilePic.jpg" alt="channel-icon" class="channel-icon">
+                <div class="info">
+                    <h4 class="title">youtube clone 2021 | create working youtube clone</h4>
+                    <p class="channel-name">modern web</p>
+                </div>
+            </div>
+        </div>
+    </div>
+     
+    <script src="https://apis.google.com/js/api.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

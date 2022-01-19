@@ -1,0 +1,273 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*:focus{
+    outline: none;
+}
+
+body{
+    position: relative;
+    background: #f0f0f0;
+    font-family: 'roboto', sans-serif;
+}
+
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    padding: 0 2.5vw;
+}
+#navbar{
+    height: 100px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.menu-bars{
+    margin-left: 0rem;
+    font-size: 2rem;
+    color: #242424;
+}
+#navbar-toggle{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.toggle-btn{
+    width: 20px;
+    height: 10px;
+    position: relative;
+    cursor: pointer;
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+}
+
+.toggle-btn span{
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #979797;
+}
+.toggle-btn span:nth-child(1){
+    top: 0;
+}
+.toggle-btn span:nth-child(3){
+    top: 100%;
+}
+
+.logo{
+    height: 30px;
+    margin: 0 10px 0 15px;
+}
+
+.search-bar{
+    width: 85%;
+    height: 100%;
+    padding: 0 20px;
+    font-size: 16px;
+}
+.search-box{
+    position: relative;
+    max-width: 500px;
+    display: flex;
+    height: 35px;
+    width: 50%;
+}
+
+.search-btn{
+    width: 10%;
+    height: 100%;
+    background: #f0f0f0;
+    border: 2px solid #dbdbdb;
+    padding: 5px 0;
+    border-left: none;
+    cursor: pointer;
+}
+.search-btn img{
+    height: 100%;
+}
+
+.voice-btn{
+    width: 10%;
+    height: 100%;
+    background: #f0f0f0;
+    border: 2px solid #dbdbdb;
+    padding: 5px 0;
+    border-left: none;
+}
+
+.voice-btn img{
+    height: 100%;
+}
+.user-options{
+    height: 35px;
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+}
+
+.user-options .icon{
+    height: 80%;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.user-dp{
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.user-dp img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.side-bar{
+    position: fixed;
+    top: 60px;
+    left: 0;
+    height: calc(100vh -60px);
+    width: 250px;
+    min-width: 250px;
+    background: #fff;
+    padding-right: 10px;
+
+}
+.side-bar.active{
+    left: 0;
+    transition: 350ms;
+}
+.links{
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 14px;
+    font-weight: 500;
+    color: #242424;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+}
+
+.links img{
+    height: 25px;
+    margin-right: 20px;
+}
+
+.links:hover,
+.links.active{
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.seperator{
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+.filters{
+    position: fixed;
+    left: 0px;
+    top: 60px;
+    height: 60px;
+    background: #fff;
+    width: calc(100% - 0px);
+    align-items: center;
+    display: flex;
+    padding: 0px 20px;
+    border-top: 1px solid #dbdbdb;
+    border-bottom: 1px solid #dbdbdb;
+    overflow-x: auto;
+    overflow-y: hidden;
+
+}
+.filters::-webkit-scrollbar{
+    display: none;
+}
+.filter-options{
+    border-radius: 50px;
+    padding: 10px 30px;
+    margin-right: 10px;
+    cursor: pointer;
+    background: #f0f0f0;
+    border: 1px solid #dbdbdb;
+    text-transform: capitalize;
+    color: #242424;
+    font-size: 15px;
+    flex: 0 0 auto;
+}
+
+.filter-options.active{
+    color: #fff;
+    background: #242424;
+}
+
+.video-container{
+    width: calc(100% -250px);
+    margin-top: 120px;
+    margin-left: 250px;
+    overflow-x: hidden;
+    padding: 20px;
+    grid-gap: 20px 5px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 50px;
+}
+
+.video{
+    min-height: 250px;
+    height: auto;
+}
+
+.thumbnail{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.content{
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.channel-icon{
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.title{
+    width: 100%;
+    height: 60px;
+    overflow: hidden;
+}
+.channel-name{
+    font-size: 14px;
+    margin: 2px 0;
+    color: #979797;
+}
