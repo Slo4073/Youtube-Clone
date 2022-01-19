@@ -1,6 +1,6 @@
 
 let video_http = "https://www.googleapis.com/youtube/v3/videos?";
-let api_key ="AIzaSyBoLNQdaHqpO6shMHE1pmdsbmxBSKNJI5o";
+let api_key ="";
 
 fetch(video_http + new URLSearchParams({ // use URLSearchParam to add parameters
     key:api_key,
